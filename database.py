@@ -3,10 +3,11 @@ import mysql.connector
 # Connect to MySQL
 def get_db_connection():
     return mysql.connector.connect(
-        host="localhost",
-        user="root",  # <-- Replace with your MySQL username if different
+        host="182.190.217.151",
+        user="remote_user",  # <-- Replace with your MySQL username if different
         password="mysons2830",  # <-- Replace with your MySQL password
-        database="library_db"
+        database="library_db",
+        port=3306
     )
 
 # Add Book
